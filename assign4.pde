@@ -61,7 +61,7 @@ void setup () {
    end2 = loadImage("img/end1.png");
    flame = new PImage[n];
    for(int b = 0;b < n;b++){
-   flame[b] = loadImage("flame"+(b+1)+".png");
+   flame[b] = loadImage("img/flame"+(b+1)+".png");
    }
    
    wave1 = false;
@@ -245,7 +245,7 @@ void draw() {
   if(l > 180){
     l = 180;
   }
-  if(l <= 0){
+  if(l < 0){
   GAME = GAME_OVER;
   }
   enemyx+=3;
