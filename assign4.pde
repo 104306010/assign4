@@ -49,16 +49,16 @@ PImage [] flame;
 void setup () {
    size(640, 480) ;
    frameRate(100);
-   bg2 = loadImage("bg2.png");
-   bg1 = loadImage("bg1.png");
-   enemy = loadImage("enemy.png");
-   fighter = loadImage("fighter.png");
-   hp = loadImage("hp.png");
-   treasure = loadImage("treasure.png");
-   start = loadImage("start2.png");
-   start2 = loadImage("start1.png");
-   end = loadImage("end2.png");
-   end2 = loadImage("end1.png");
+   bg2 = loadImage("img/bg2.png");
+   bg1 = loadImage("img/bg1.png");
+   enemy = loadImage("img/enemy.png");
+   fighter = loadImage("img/fighter.png");
+   hp = loadImage("img/hp.png");
+   treasure = loadImage("img/treasure.png");
+   start = loadImage("img/start2.png");
+   start2 = loadImage("img/start1.png");
+   end = loadImage("img/end2.png");
+   end2 = loadImage("img/end1.png");
    flame = new PImage[n];
    for(int b = 0;b < n;b++){
    flame[b] = loadImage("flame"+(b+1)+".png");
