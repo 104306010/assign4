@@ -177,7 +177,7 @@ void draw() {
      if(enemy2x[i]-fighterx<=61&&enemy2x[i]-fighterx>=-61&&enemy2y[i]-fightery<=61&&enemy2y[i]-fightery>=-61){
       crush2 = true;
       enemy2y[i]+=1000;
-      l = l-38;
+      l = l-40;
     flameX = enemy2x[i];
     flameY =enemy2y[i]-1000;
     flame_time = 0;
@@ -237,7 +237,7 @@ void draw() {
              flameY=10000;
              flame_time=0;
            }
-           if(k-fighterx<=40&&k-fighterx>=-40&&s-fightery<=40&&s-fightery>=-40){
+           if(k-fighterx<=45&&k-fighterx>=-45&&s-fightery<=45&&s-fightery>=-45){
     k = random(0,600);
     s = random(0,440);  
     l = l+20;
