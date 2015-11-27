@@ -245,7 +245,7 @@ void draw() {
   if(l > 180){
     l = 180;
   }
-  if(l < 0){
+  if(l < 5){
   GAME = GAME_OVER;
   flameY=-10000;
   }
