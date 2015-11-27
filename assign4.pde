@@ -12,8 +12,8 @@ float [] enemy3x = new float[8];
 float [] enemy3y = {d,d-61,d+61,d-122,d+122,d-61,d+61,d};
 float enemyx = 0;
 float enemyy = 0;
-float k = random(0,590);
-float s = random(0,420);
+float tx = random(0,590);
+float ty = random(0,420);
 float l = 40;
 float fighterx = 590;
 float fightery = 240;
@@ -79,7 +79,7 @@ void draw() {
   fill(247,7,7);
     rect(10,10,l,10);
   image(hp,0,0);
-  image(treasure,k,s);
+  image(treasure,tx,ty);
  
   b1+=2;
   b2+=2;
@@ -237,9 +237,9 @@ void draw() {
              flameY=10000;
              flame_time=0;
            }
-           if(k-fighterx<=45&&k-fighterx>=-45&&s-fightery<=45&&s-fightery>=-45){
-    k = random(0,600);
-    s = random(0,440);  
+           if(tx-fighterx<=45&&tx-fighterx>=-45&&ty-fightery<=45&&ty-fightery>=-45){
+    tx = random(0,600);
+    ty = random(0,440);  
     l = l+20;
   }
   if(l > 180){
@@ -247,6 +247,7 @@ void draw() {
   }
   if(l < 0){
   GAME = GAME_OVER;
+  flameY=-10000;
   }
   enemyx+=3;
    break;
